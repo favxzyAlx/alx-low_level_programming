@@ -1,16 +1,16 @@
 #include "main.h"
-
 /**
- * get_endianness - a function that checks if
- *                  architecture is little endian
- *                  or big endian
+ * get_endianness - checks the endianness
  *
- * Return: 1 if little endian or 0 if big endian
-*/
+ * Return: 0 if big endian, 1 if little endian
+ */
 int get_endianness(void)
 {
-	unsigned int num = 1;
-	char *c = (char *) &num;
+	int i;
+	char *c;
 
-	return (c[0]);
+	i = 1;
+	c = (char *)&i;
+
+	return (*c);
 }
