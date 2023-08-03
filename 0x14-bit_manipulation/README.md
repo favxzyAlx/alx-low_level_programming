@@ -1,1 +1,0 @@
-Bit malnipulation readme
